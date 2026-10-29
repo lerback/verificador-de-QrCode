@@ -5,6 +5,7 @@ import { Button, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 export default function App() {
   const [facing, setFacing] = useState<CameraType>('back');
   const [permission, requestPermission] = useCameraPermissions();
+const [abrir camera] = 
 
   if (!permission) {
     // Camera permissions are still loading.
@@ -29,6 +30,9 @@ export default function App() {
     console.log(resultado.data)
   }
 
+  if (aceesoCamera) = true{
+
+  
   return (
     <View style={styles.container}>
       <CameraView style={styles.camera} facing={facing} onBarcodeScanned={onScanner} />
@@ -39,6 +43,9 @@ export default function App() {
       </View>
     </View>
   );
+}
+
+
 }
 
 const styles = StyleSheet.create({
