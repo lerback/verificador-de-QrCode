@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Text, View, Button, FlatList, SafeAreaViewBase } from 'react-native';
+import { CameraView, useCameraPermissions } from 'expo-camera';
 
 export default function App() {
   return (
